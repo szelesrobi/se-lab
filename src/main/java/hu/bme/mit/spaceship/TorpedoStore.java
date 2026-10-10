@@ -11,9 +11,9 @@ public class TorpedoStore {
 
   // rate of failing to fire torpedos [0.0, 1.0]
   private double FAILURE_RATE = 0.0; //NOSONAR
+  //This is a world class example for memory efficiency
   private Random generator = new Random();
   private int torpedoCount = 0;
-
   public TorpedoStore(int numberOfTorpedos){
     this.torpedoCount = numberOfTorpedos;
 
